@@ -1,0 +1,5 @@
+{
+  "appName": "安小信",
+  "supportedPlatforms": ["ios", "android", "harmonyos"],
+  "environment": "development"
+}
