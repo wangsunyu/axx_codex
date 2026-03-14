@@ -9,7 +9,7 @@ class HomePage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('安小信 Flutter 基座'),
+        title: const Text('安小信主页面'),
       ),
       body: SafeArea(
         child: ListView(
@@ -30,7 +30,7 @@ class HomePage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    '一套 Flutter 代码，面向 iOS / Android / 鸿蒙',
+                    '登录成功后进入的主页面占位',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 28,
@@ -40,7 +40,7 @@ class HomePage extends StatelessWidget {
                   ),
                   SizedBox(height: 12),
                   Text(
-                    '当前工程已准备好作为共享业务层的起点，可继续接入页面、状态管理和平台能力。',
+                    '当前页面用于承接登录成功后的默认跳转，后续可以在这里继续接入真正的业务首页、导航结构和主功能模块。',
                     style: TextStyle(
                       color: Colors.white70,
                       fontSize: 15,
@@ -52,25 +52,25 @@ class HomePage extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             Text(
-              '当前基座内容',
+              '当前主页面说明',
               style: theme.textTheme.titleLarge?.copyWith(
                 fontWeight: FontWeight.w700,
               ),
             ),
             const SizedBox(height: 12),
             const _CapabilityCard(
-              title: '共享应用壳层',
-              description: 'Material 3 主题、首页入口和可扩展的目录结构已经就绪。',
+              title: '登录跳转落点',
+              description: '账号密码登录和验证码登录成功后，当前默认进入这个主页面占位。',
             ),
             const SizedBox(height: 12),
             const _CapabilityCard(
-              title: '多端宿主准备',
-              description: 'iOS 和 Android 使用标准 Flutter 宿主工程，鸿蒙保留独立接入目录与说明。',
+              title: '后续可扩展',
+              description: '这里可以继续接入底部导航、工作台、消息中心或用户中心等业务模块。',
             ),
             const SizedBox(height: 12),
             const _CapabilityCard(
-              title: '下一步建议',
-              description: '接入业务路由、状态管理和后端 API，并逐个平台补全签名与发布配置。',
+              title: '当前实现状态',
+              description: '登录页、环境地址、RSA 加密、防抖和验证码倒计时能力已完成首版接入。',
             ),
           ],
         ),
